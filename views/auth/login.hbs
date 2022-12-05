@@ -1,0 +1,20 @@
+<h1>Login</h1>
+<form action="" method="POST">
+    <label>Email</label>
+    {{!-- name="email" same as the model recommended --}}
+    <input type="email" required name="email">
+    <label>Password</label>
+    <input type="password"required name="password" >
+</form>
+
+{{!-- 
+    req.body = {
+       email :"perro@demo.com",
+       password: "Nova182"         <------ name  is very important because it will reflect the req.body so it has to match
+    }
+            input always have to have name, otherwise it will never go to the backend 
+ --}}
+
+
+{{!-- action is the route to where it will send the request (req) --}}
+{{!-- method is the verb http uses--}}
